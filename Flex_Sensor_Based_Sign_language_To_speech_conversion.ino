@@ -7,16 +7,14 @@
 LiquidCrystal_I2C lcd(0x27, 16, 2);
 
 #include "SoftwareSerial.h"
-#include "DFRobotDFPlayerMini.h"
-
-SoftwareSerial mySoftwareSerial(10, 11); // RX, TX
+#include "DFRobotDFPlayerMini.h" 
 DFRobotDFPlayerMini myDFPlayer;
 void printDetail(uint8_t type, int value);
-
 #define blue 2
 #define green 3
 #define red 4
 unsigned int f;
+//SoftwareSerial mySoftwareSerial(10, 11);
 
 void setup()
 {
